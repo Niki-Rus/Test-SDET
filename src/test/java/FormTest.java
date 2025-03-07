@@ -14,7 +14,7 @@ public class FormTest {
     @BeforeEach
     public void setup(){
         driver = new ChromeDriver();
-        driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(7, TimeUnit.SECONDS);
         try {
             driver.get("https://practice-automation.com/form-fields/");
         } catch (TimeoutException ignore){}
